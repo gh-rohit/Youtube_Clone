@@ -1,0 +1,89 @@
+.home-sidenavbar{
+    width: 250px;
+    height: 91vh;
+    background-color: #0f0f0f;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    position: fixed;
+    top: 9.5%;
+    left: 0;
+    z-index: 1000;
+}
+.home-sidenavbar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-sections {
+    padding: 20px 0;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+
+.sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section li {
+    padding: 0 24px;
+}
+
+.sidebar-section a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.sidebar-section a:hover {
+    background-color: #383838;
+}
+
+.sidebar-section i {
+    font-size: 18px;
+    margin-right: 24px;
+    width: 24px;
+    text-align: center;
+}
+
+.sidebar-section img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.sidebar-section span {
+    font-size: 14px;
+}
+
+.home-sidenavbar-close{
+    display: none;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+}
+  /* Optional: Create an overlay to capture clicks outside the sidebar */
+  @media screen and (max-width : 1200px) {
+    .home-sidenavbar {
+        height: 100vh;
+        position: fixed;
+        top: 9.5%;
+    }
+
+    .home-sidenavbar.open {
+        left: 0;
+    }
+  }

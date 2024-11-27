@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #181818;
+    margin-top: 18vh;
+
+  }
+  
+  .signup-card {
+    background-color: #282828;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  .signup-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+   .signup-form .input-group {
+    margin-bottom: 0.2rem;
+  } 
+   
+  .signup-form label {
+    color: #a1a1a1;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .signup-form input:focus {
+    outline: none;
+    background-color: #4a4a4a;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #e60000;
+  }
+  
+  .signin-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: #a1a1a1;
+  }
+  
+  .signin-link {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .signin-link:hover {
+    text-decoration: underline;
+  }
+  .picture-input {
+    display: block;
+    width: 100%; /* Full width */
+    padding: 12px; /* Add some padding for better look */
+    margin: 10px 0; /* Space around the input */
+    border: 1px solid #3c3c3c; /* Darker border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #333; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    cursor: pointer; /* Change cursor on hover */
+    box-sizing: border-box; /* Include padding and border in total size */
+    transition: background-color 0.3s ease;
+    
+}
+
+.picture-input:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+.imagediv{
+  width: 55px;
+  height: 55px;
+  background-color: rgb(57, 57, 63);
+  border-radius: 50%;
+  flex-shrink: 0;
+
+
+}
+.imagediv img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+
+.dp{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+}
+  

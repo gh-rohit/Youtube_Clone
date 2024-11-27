@@ -1,0 +1,122 @@
+/* videoUpload.css */
+
+/* Wrapper class to center the container */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 10vh;
+  background-color: #181818; /* Dark background */
+}
+
+/* Container styling */
+.container {
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 50px;
+  background-color: #202020; /* Dark container background */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff; /* White title */
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #3c3c3c; /* Darker border */
+  box-sizing: border-box;
+  background-color: #333; /* Dark input background */
+  color: #ffffff; /* White input text */
+}
+
+/* Textarea styling */
+.textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #3c3c3c; /* Darker border */
+  min-height: 100px;
+  max-height: 200px;
+  box-sizing: border-box;
+  background-color: #333; /* Dark textarea background */
+  color: #ffffff; /* White textarea text */
+  overflow-y: auto;
+  resize: vertical;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+  margin-bottom: 20px;
+}
+
+/* Upload label styling */
+.upload-label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #aaaaaa; /* Light gray text */
+}
+
+/* File input */
+.file-input {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: #333; /* Dark input background */
+  color: #ffffff; /* White input text */
+  border: 1px solid #3c3c3c; /* Darker border */
+}
+
+/* Preview styling */
+.preview {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Thumbnail preview styling */
+.thumbnail-preview {
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+/* Video upload container */
+.video-upload-container {
+  margin: 20px 0;
+}
+
+/* Upload button */
+.upload-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #cc0000; /* Red YouTube-style button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background: #e60000; /* Slightly brighter red on hover */
+}
