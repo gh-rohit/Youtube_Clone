@@ -56,7 +56,7 @@ const Signup = () => {
     e.preventDefault(); // Prevent the default form submission behavior
     try {
       setProgressBar(true);
-      const response = await axios.post('http://localhost:3000/auth/signUp', signupForm);
+      const response = await axios.post('https://travel-tales-backend-gegu.onrender.com/auth/signUp', signupForm);
       console.log('Signup successful:', response.data);
       setProgressBar(false); // Hide the progress bar
       toast.success('Signup successful!');
