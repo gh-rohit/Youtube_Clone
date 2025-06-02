@@ -28,7 +28,7 @@ const VideoPage = () => {
   // Fetch video by ID
   const fetchVideoById = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/getVideoById/${id}`);
+      const response = await axios.get(`https://youtube-clone-backend-une1.onrender.com/api/getVideoById/${id}`);
       setData(response.data.getVideo);
       setVideoUrl(response?.data?.getVideo?.videoLink);
     } catch (err) {
@@ -39,7 +39,7 @@ const VideoPage = () => {
   // Fetch suggested videos
   const fetchSuggestedVideos = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/suggestedVideos/${id}`);
+      const response = await axios.get(`https://youtube-clone-backend-une1.onrender.com/api/suggestedVideos/${id}`);
       setSuggestedVideos(response.data.videos);
     } catch (err) {
       console.error("Error fetching suggested videos:", err);
@@ -49,7 +49,7 @@ const VideoPage = () => {
   // Fetch comments by video ID
   const getCommentedVideoById = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/commentApi/comment/${id}`);
+      const response = await axios.get(`https://youtube-clone-backend-une1.onrender.com/commentApi/comment/${id}`);
       setComments(response.data.comments);
     } catch (err) {
       console.error("Error fetching comments:", err);
