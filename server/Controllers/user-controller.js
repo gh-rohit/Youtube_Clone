@@ -5,8 +5,8 @@ require('dotenv').config();
 
 const cookieOptions ={
    httpOnly: true,
-   secure: false,
-   sameSite: 'Lax'
+   secure: true,
+   sameSite: 'None'
 }
 
  exports.signUp = async (req,res)=>{
