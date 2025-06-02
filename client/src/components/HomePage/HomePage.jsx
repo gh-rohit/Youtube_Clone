@@ -7,7 +7,7 @@ const HomePage = ({sideNavbar}) => {
   const options = ['All','Home', 'Trending', 'Subscription','Library','History','Your Videos','Watch Later','Liked Videos','Create a Video','Settings','Help','Feedback','Report a Bug']
   const[data , setdata] = useState([])
 useEffect(()=>{
-  axios.get('http://localhost:3000/api/allVideo').then(res=>{
+  axios.get('https://youtube-clone-backend-une1.onrender.com/api/allVideo').then(res=>{
     console.log(res.data)
     setdata(res.data.videos)
   }).catch(err=>{
