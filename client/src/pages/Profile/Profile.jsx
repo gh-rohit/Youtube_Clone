@@ -11,7 +11,7 @@ const Profile = ({sideNavbar}) => {
   const [data , setData] = useState([])
   const [user , setUser] =  useState(null)
  const  fetchProfileData = async ()=>{
-  axios.get(`http://localhost:3000/api/${id}/channel`).then((response)=>{
+  axios.get(`https://youtube-clone-backend-une1.onrender.com/api/${id}/channel`).then((response)=>{
     console.log(response)
     setData(response.data.video)
     setUser(response.data.video[0]?.user)
