@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
+require('dotenv').config(); // Load environment variables
 
-mongoose.connect('mongodb://localhost:27017/youtube-backend', {
-})
-.then(() => console.log('DB connection established'))
-.catch((err) => console.error('Error connecting to DB:', err));
+const mongoURI = process.env.MONGO_URI;
+
+mongoose.connect(mongoURI, {})
+  .then(() => console.log('DB connection established'))
+  .catch((err) => console.error('Error connecting to DB:', err));
+
