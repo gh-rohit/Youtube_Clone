@@ -69,7 +69,7 @@ const videoUpload = () => {
 
   const handleSubmitFunc = async () => {
     try {
-      const res = await axios.post('http://localhost:3000/api/video', inputField, {
+      const res = await axios.post('https://youtube-clone-backend-une1.onrender.com/api/video', inputField, {
         withCredentials: true,
       });
       console.log(res.data);
