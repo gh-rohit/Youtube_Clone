@@ -8,7 +8,7 @@ require('dotenv').config(); // Load environment variables
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-   origin: "http://localhost:5173", // React frontend URL
+   origin: "https://youtube-clone-frontend-c8kj.onrender.com", // React frontend URL
    credentials: true,
    allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Authorization"]
 }));
