@@ -82,7 +82,7 @@ const VideoPage = () => {
         video: id,
       };
       await axios.post(
-        "http://localhost:3000/commentApi/comment",
+        "https://youtube-clone-backend-une1.onrender.com/commentApi/comment",
         body,
         { withCredentials: true }
       );
